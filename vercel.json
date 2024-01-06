@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "/public/*/", "use": "@vercel/php" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/public/$1" }
+    ],
+    "env": {
+      "VERCEL_ENV": "production"
+    }
+  }
